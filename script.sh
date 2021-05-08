@@ -6,7 +6,7 @@ apt install apache2-utils -y
 apt install curl -y
 touch /etc/squid/.ip.txt
 touch /etc/squid/squidusers
-IP = $(curl ifconfig.co)
+IP=$(curl -s ifconfig.co)
 echo "$IP tom" > /etc/squid/.ip.txt
 htpasswd -nb tom 123 > /etc/squid/squidusers
 echo "http_port 7158
