@@ -1,6 +1,5 @@
 apt update
 apt upgrade -y
-apt install curl
 apt install squid -y
 apt install apache2-utils -y
 apt install curl -y
